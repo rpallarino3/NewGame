@@ -12,6 +12,11 @@ namespace NewGame.Input
         private Keybinds keybinds;
         private KeyboardState previousState;
 
+        private int upTime;
+        private int downTime;
+        private int rightTime;
+        private int leftTime;
+
         public KeyHandler()
         {
         }
@@ -19,6 +24,67 @@ namespace NewGame.Input
         public void updateKeys(KeyboardState keyState)
         {
             previousState = keyState;
+            checkMoveKeys(keyState);
+        }
+
+        private void checkMoveKeys(KeyboardState keyState)
+        {
+            if (keyState.IsKeyDown(keybinds.getKeybinds()["MOVEUP"]))
+            {
+                upTime++;
+            }
+            else
+            {
+                upTime = 0;
+            }
+
+            if (keyState.IsKeyDown(keybinds.getKeybinds()["MOVEDOWN"]))
+            {
+                downTime++;
+            }
+            else
+            {
+                downTime = 0;
+            }
+
+            if (keyState.IsKeyDown(keybinds.getKeybinds()["MOVERIGHT"]))
+            {
+                rightTime++;
+            }
+            else
+            {
+                rightTime = 0;
+            }
+
+            if (keyState.IsKeyDown(keybinds.getKeybinds()["MOVELEFT"]))
+            {
+                leftTime++;
+            }
+            else
+            {
+                leftTime = 0;
+            }
+        }
+
+
+        public int getUpTime()
+        {
+            return upTime;
+        }
+
+        public int getDownTime()
+        {
+            return downTime;
+        }
+
+        public int getRightTime()
+        {
+            return rightTime;
+        }
+
+        public int getLeftTime()
+        {
+            return leftTime;
         }
     }
 }
