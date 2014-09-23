@@ -19,6 +19,7 @@ namespace NewGame.Input
 
         public KeyHandler()
         {
+            keybinds = new Keybinds();
         }
 
         public void updateKeys(KeyboardState keyState)

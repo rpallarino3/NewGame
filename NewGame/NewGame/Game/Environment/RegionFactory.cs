@@ -15,7 +15,7 @@ namespace NewGame.Game.Environment
         {
             zoneFactories = new List<ZoneFactory>();
 
-            zoneFactories.Add(new RobotTownZoneFactory);
+            zoneFactories.Add(new RobotTownZoneFactory());
         }
 
         public ZoneFactory getZoneFactory(int region)

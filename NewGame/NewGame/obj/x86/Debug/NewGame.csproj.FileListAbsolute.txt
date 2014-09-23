@@ -1,0 +1,6 @@
+C:\Users\Ryan\Documents\Visual Studio 2012\Projects\NewGame\NewGame\NewGame\obj\x86\Debug\NewGame.csprojResolveAssemblyReference.cache
+C:\Users\Ryan\Documents\Visual Studio 2012\Projects\NewGame\NewGame\NewGame\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Ryan\Documents\Visual Studio 2012\Projects\NewGame\NewGame\NewGame\bin\x86\Debug\NewGame.exe
+C:\Users\Ryan\Documents\Visual Studio 2012\Projects\NewGame\NewGame\NewGame\bin\x86\Debug\NewGame.pdb
+C:\Users\Ryan\Documents\Visual Studio 2012\Projects\NewGame\NewGame\NewGame\obj\x86\Debug\NewGame.exe
+C:\Users\Ryan\Documents\Visual Studio 2012\Projects\NewGame\NewGame\NewGame\obj\x86\Debug\NewGame.pdb
