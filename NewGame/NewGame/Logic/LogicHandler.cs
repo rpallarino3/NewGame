@@ -13,10 +13,12 @@ namespace NewGame.Logic
 {
     class LogicHandler
     {
+        private MovementHandler movementHandler;
         private Color drawColor;
 
         public LogicHandler()
         {
+            movementHandler = new MovementHandler();
             drawColor = Color.White;
         }
 
