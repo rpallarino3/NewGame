@@ -42,5 +42,10 @@ namespace NewGame.Game.Animations.States
         {
             return atlas;
         }
+
+        public bool isAnimationCancellable()
+        {
+            return atlas.isCancellable(currentRow);
+        }
     }
 }

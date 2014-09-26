@@ -18,10 +18,24 @@ namespace NewGame.Game
         private int currentZone;
         private int currentRegion;
         private AnimationState animationState;
+        private Vector2 walkingSize;
+        private Vector2 drawingSize;
 
         public Player()
         {
             animationState = new CharacterAnimationState(0, new HumanoidCharacterAtlas());
+            walkingSize = new Vector2(30, 30);
+            drawingSize = new Vector2(30, 45);
+        }
+
+        public Vector2 getWalkingSize()
+        {
+            return walkingSize;
+        }
+
+        public Vector2 getDrawingSize()
+        {
+            return drawingSize;
         }
 
         public AnimationState getAnimationState()

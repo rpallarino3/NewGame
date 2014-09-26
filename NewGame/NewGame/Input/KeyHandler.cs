@@ -87,5 +87,11 @@ namespace NewGame.Input
         {
             return leftTime;
         }
+
+        // fix this shit
+        public bool isActionReady()
+        {
+            return false;
+        }
     }
 }
